@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — Toro</title>
+  <meta name="description" content="Toro app Terms of Service and User Agreement." />
+  <link rel="icon" href="https://torocoin.org/favicon.ico" />
+  <style>
+    :root {
+      --bg: #001233;
+      --surface: #0a1f4a;
+      --border: rgba(255,255,255,0.08);
+      --primary: #3A7BD5;
+      --accent: #F5A623;
+      --text: #E8EDF5;
+      --muted: #8A9BBD;
+      --radius: 12px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(180deg, #0C1A3A 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(12px);
+    }
+    .logo-circle {
+      width: 40px; height: 40px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; font-weight: 900; color: #fff;
+      flex-shrink: 0;
+    }
+    .brand { font-size: 20px; font-weight: 700; color: var(--text); letter-spacing: 0.5px; }
+    .brand span { color: var(--accent); }
+    header nav { margin-left: auto; }
+    header a {
+      color: var(--muted); font-size: 14px; text-decoration: none;
+      border: 1px solid var(--border); border-radius: 6px;
+      padding: 6px 14px; transition: all 0.2s;
+    }
+    header a:hover { color: var(--text); border-color: var(--primary); }
+
+    /* ── Hero ── */
+    .hero {
+      text-align: center;
+      padding: 60px 24px 40px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(58,123,213,0.15);
+      border: 1px solid rgba(58,123,213,0.35);
+      border-radius: 100px;
+      padding: 6px 18px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--primary);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    .hero p {
+      color: var(--muted);
+      font-size: 15px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .effective-date {
+      display: inline-block;
+      margin-top: 16px;
+      background: rgba(245,166,35,0.1);
+      border: 1px solid rgba(245,166,35,0.3);
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-size: 13px;
+      color: var(--accent);
+    }
+
+    /* ── Content ── */
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 20px;
+    }
+
+    .card-highlight {
+      background: rgba(58,123,213,0.08);
+      border-color: rgba(58,123,213,0.25);
+    }
+
+    .card-warning {
+      background: rgba(245,166,35,0.08);
+      border-color: rgba(245,166,35,0.25);
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .num {
+      background: var(--primary);
+      color: #fff;
+      width: 28px; height: 28px;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    p { color: var(--muted); font-size: 15px; margin-bottom: 10px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+    ul li {
+      color: var(--muted);
+      font-size: 15px;
+      padding: 5px 0 5px 22px;
+      position: relative;
+    }
+    ul li::before {
+      content: '→';
+      color: var(--primary);
+      position: absolute;
+      left: 0;
+      font-size: 13px;
+    }
+
+    strong { color: var(--text); font-weight: 600; }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .age-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(245,166,35,0.15);
+      border: 1px solid rgba(245,166,35,0.4);
+      border-radius: 10px;
+      padding: 10px 18px;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    .sim-note {
+      background: rgba(58,123,213,0.1);
+      border-left: 3px solid var(--primary);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin-top: 12px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .sim-note strong { color: var(--primary); }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    footer a { color: var(--primary); }
+    .footer-links { display: flex; justify-content: center; gap: 24px; margin-top: 12px; flex-wrap: wrap; }
+
+    @media (max-width: 600px) {
+      .card { padding: 20px 18px; }
+      header { padding: 14px 16px; }
+      .hero { padding: 40px 16px 28px; }
+      .content { padding: 0 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-circle">T</div>
+  <span class="brand">Toro<span>.</span></span>
+  <nav>
+    <a href="https://torocoin.org">← Home</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="hero-badge">Legal</div>
+  <h1>Terms of Service</h1>
+  <p>Please read these terms carefully before using the Toro app. By registering an account, you agree to be bound by these terms.</p>
+  <div class="effective-date">⚡ Effective Date: April 10, 2026</div>
+</div>
+
+<div class="content">
+
+  <!-- Age Requirement -->
+  <div class="card card-warning">
+    <h2><span class="num">!</span> Age Requirement</h2>
+    <div class="age-badge">🔞 You must be at least 13 years old to use Toro.</div>
+    <p>
+      By creating an account, you confirm that you are <strong>13 years of age or older</strong>.
+      If you are under 13, you may not use Toro under any circumstances.
+      If we discover that a user is under 13, we reserve the right to immediately terminate their account.
+    </p>
+    <p>
+      Users between the ages of 13 and 17 must have parental or guardian consent to use the app.
+    </p>
+  </div>
+
+  <!-- 1. Acceptance -->
+  <div class="card">
+    <h2><span class="num">1</span> Acceptance of Terms</h2>
+    <p>
+      These Terms of Service ("Terms") constitute a legally binding agreement between you ("User") and
+      <strong>Toro</strong> ("we", "our", or "us") governing your access to and use of the Toro mobile application
+      and related services (collectively, the "Service").
+    </p>
+    <p>
+      By downloading, installing, or using the Toro app, you acknowledge that you have read, understood,
+      and agree to be bound by these Terms and our <a href="https://torocoin.org/privacy-policy">Privacy Policy</a>.
+    </p>
+  </div>
+
+  <!-- 2. Description -->
+  <div class="card">
+    <h2><span class="num">2</span> Description of Service</h2>
+    <p>
+      Toro is a <strong>digital engagement and reward application</strong> that allows users to accumulate
+      in-app points ("BC" or "Toro Coins") through daily activities, team participation, and completing tasks.
+    </p>
+    <div class="sim-note">
+      <strong>Important Notice:</strong> Toro Coins (BC) are <strong>virtual, in-app points only</strong>.
+      They have no monetary value, cannot be exchanged for real currency, and do not represent any
+      financial instrument, cryptocurrency, or investment. Toro is not a cryptocurrency platform.
+      No real money is earned through normal use of the app.
+    </div>
+  </div>
+
+  <!-- 3. Account -->
+  <div class="card">
+    <h2><span class="num">3</span> User Accounts</h2>
+    <p>To access most features of Toro, you must register an account. You agree to:</p>
+    <ul>
+      <li>Provide accurate and complete registration information</li>
+      <li>Keep your password secure and confidential</li>
+      <li>Be responsible for all activity that occurs under your account</li>
+      <li>Notify us immediately of any unauthorized use of your account</li>
+      <li>Use only one account per person</li>
+    </ul>
+    <p style="margin-top:12px;">
+      We reserve the right to suspend or terminate accounts that violate these Terms.
+    </p>
+  </div>
+
+  <!-- 4. Acceptable Use -->
+  <div class="card">
+    <h2><span class="num">4</span> Acceptable Use</h2>
+    <p>You agree <strong>not</strong> to:</p>
+    <ul>
+      <li>Use bots, scripts, or automated tools to manipulate mining or task completion</li>
+      <li>Create fake accounts or impersonate other users</li>
+      <li>Attempt to hack, exploit, or disrupt the Service</li>
+      <li>Engage in abusive, harassing, or harmful behavior toward other users</li>
+      <li>Share account credentials with other persons</li>
+      <li>Use the Service for any illegal purpose</li>
+      <li>Attempt to convert, sell, or transfer in-app points for real money</li>
+    </ul>
+  </div>
+
+  <!-- 5. In-App Currency -->
+  <div class="card card-highlight">
+    <h2><span class="num">5</span> In-App Points (Toro Coins / BC)</h2>
+    <p>
+      Toro Coins are a virtual points system used solely within the Toro application.
+      You acknowledge and agree that:
+    </p>
+    <ul>
+      <li>Toro Coins have <strong>no real-world monetary value</strong></li>
+      <li>Toro Coins cannot be exchanged for real currency or goods</li>
+      <li>Toro does not guarantee the availability or continuity of the points system</li>
+      <li>We may modify, reset, or discontinue Toro Coins at any time</li>
+      <li>Toro Coins accumulated through fraudulent means will be forfeited</li>
+    </ul>
+  </div>
+
+  <!-- 6. Teams -->
+  <div class="card">
+    <h2><span class="num">6</span> Teams & Social Features</h2>
+    <p>
+      Toro allows users to form and join teams. When participating in team features, you agree to:
+    </p>
+    <ul>
+      <li>Respect all team members and communicate respectfully</li>
+      <li>Comply with instructions from team administrators within the app</li>
+      <li>Not use team features to harass or harm other users</li>
+    </ul>
+    <p style="margin-top:10px;">
+      Team administrators may remove members from their team at any time.
+      We are not responsible for team-related disputes between users.
+    </p>
+  </div>
+
+  <!-- 7. Ads -->
+  <div class="card">
+    <h2><span class="num">7</span> Advertising</h2>
+    <p>
+      Toro displays advertisements served by Google AdMob. By using the Service, you may be shown ads.
+      We do not control the content of third-party ads. Ad display is subject to Google's
+      <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>.
+    </p>
+    <p>
+      Rewarded ads are optional — you may choose to watch an advertisement in exchange for bonus in-app points.
+      This is voluntary and you can use the app without watching ads.
+    </p>
+  </div>
+
+  <!-- 8. Intellectual Property -->
+  <div class="card">
+    <h2><span class="num">8</span> Intellectual Property</h2>
+    <p>
+      All content, branding, design, code, and features of the Toro application are the exclusive property
+      of Toro and protected by applicable intellectual property laws. You may not copy, modify, distribute,
+      or create derivative works from any part of the Service without our prior written consent.
+    </p>
+  </div>
+
+  <!-- 9. Privacy -->
+  <div class="card">
+    <h2><span class="num">9</span> Privacy</h2>
+    <p>
+      Your use of Toro is also governed by our <a href="https://torocoin.org/privacy-policy">Privacy Policy</a>,
+      which is incorporated into these Terms by reference. We collect and process personal data as described
+      in that policy, including your email address and usage statistics, stored on secure cloud servers.
+    </p>
+    <p>
+      We do not sell your personal data to third parties.
+    </p>
+  </div>
+
+  <!-- 10. Disclaimer -->
+  <div class="card">
+    <h2><span class="num">10</span> Disclaimer of Warranties</h2>
+    <p>
+      The Service is provided on an <strong>"as is" and "as available"</strong> basis without warranties of any kind,
+      either express or implied. We do not warrant that the Service will be uninterrupted, error-free,
+      or free of viruses or other harmful components.
+    </p>
+    <p>
+      We do not guarantee the accuracy, completeness, or reliability of any content within the Service.
+    </p>
+  </div>
+
+  <!-- 11. Limitation of Liability -->
+  <div class="card">
+    <h2><span class="num">11</span> Limitation of Liability</h2>
+    <p>
+      To the maximum extent permitted by law, Toro shall not be liable for any indirect, incidental,
+      special, consequential, or punitive damages arising from your use of or inability to use the Service,
+      including but not limited to loss of data, loss of in-app points, or loss of profits.
+    </p>
+    <p>
+      Our total aggregate liability to you shall not exceed the amount you paid us in the twelve months
+      preceding the claim (which, for a free app, is zero).
+    </p>
+  </div>
+
+  <!-- 12. Termination -->
+  <div class="card">
+    <h2><span class="num">12</span> Termination</h2>
+    <p>
+      We reserve the right to suspend or terminate your account and access to the Service at any time,
+      with or without notice, for any reason, including violation of these Terms.
+    </p>
+    <p>
+      You may delete your account at any time from within the Toro app's Profile screen.
+      Upon deletion, your data will be removed from our servers in accordance with our Privacy Policy.
+    </p>
+  </div>
+
+  <!-- 13. Changes -->
+  <div class="card">
+    <h2><span class="num">13</span> Changes to These Terms</h2>
+    <p>
+      We may update these Terms from time to time. When we do, we will update the effective date at the top
+      of this page. Continued use of the Service after changes constitutes your acceptance of the revised Terms.
+    </p>
+    <p>
+      For material changes, we will make reasonable efforts to notify you (e.g., via in-app notification).
+    </p>
+  </div>
+
+  <!-- 14. Governing Law -->
+  <div class="card">
+    <h2><span class="num">14</span> Governing Law & Contact</h2>
+    <p>
+      These Terms are governed by and construed in accordance with applicable laws.
+      Any dispute arising from or relating to these Terms shall be resolved through good-faith negotiation.
+    </p>
+    <p>
+      For questions, concerns, or complaints regarding these Terms, please contact us at:
+    </p>
+    <ul>
+      <li>Website: <a href="https://torocoin.org">torocoin.org</a></li>
+      <li>Support: <a href="https://torocoin.org/support">torocoin.org/support</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  <div>© 2026 Toro. All rights reserved.</div>
+  <div class="footer-links">
+    <a href="https://torocoin.org">Home</a>
+    <a href="https://torocoin.org/privacy-policy">Privacy Policy</a>
+    <a href="https://torocoin.org/terms">Terms of Service</a>
+    <a href="https://torocoin.org/support">Support</a>
+  </div>
+</footer>
+
+</body>
+</html>
