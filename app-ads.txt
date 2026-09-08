@@ -4771,7 +4771,7 @@ voisetech.com,1244,RESELLER,9009ef0379162448
 
 voisetech.com,1246,RESELLER,9009ef0379162448
 
-vungle.com,561e8d956b8d90f61a003219,RESELLER,c107d686becd2d77
+
 
 webeyemob.com, 70098, RESELLER
 
@@ -5030,3 +5030,5 @@ trustedstack.com, TS677PGY3, RESELLER
 adyoulike.com, 721f20f70910d379981dc19ec5da709f, RESELLER
 
 axonix.com, 59204, RESELLER
+
+ vungle.com, 69aabd772eb00c1bc8c25df4, DIRECT, c107d686becd2d77
